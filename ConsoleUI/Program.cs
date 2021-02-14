@@ -16,7 +16,8 @@ namespace ConsoleUI
             //BrandAddTest();
             //CarAddTest();
             //ColorAddTest();
-            CarUpdateTest();
+            //CarUpdateTest();
+            
         }
 
         private static void CarUpdateTest()
@@ -84,8 +85,8 @@ namespace ConsoleUI
             {
                 FirstName = "Tuğba",
                 LastName = "Aktaş",
-                Email = "arsız_bela@gmail.com",
-                Password = "123456"
+                Email = "tubaaktas83@gmail.com",
+                Password = "147852369"
             });
             Console.WriteLine(Messages.Added);
         }
