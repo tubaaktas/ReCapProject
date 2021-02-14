@@ -16,16 +16,21 @@ namespace ConsoleUI
             //BrandAddTest();
             //CarAddTest();
             //ColorAddTest();
+            CarUpdateTest();
+        }
+
+        private static void CarUpdateTest()
+        {
             CarManager carManager = new CarManager(new EfCarDal());
             carManager.Update(new Car
             {
-                CarId=1,
-                BrandId=1,
-                CarName="Mustang",
-                ColorId=3,
-                ModelYear=1967,
-                DailyPrice=1299,
-                Description="V8 350HP Manual"
+                CarId = 1,
+                BrandId = 1,
+                CarName = "Mustang",
+                ColorId = 3,
+                ModelYear = 1967,
+                DailyPrice = 1299,
+                Description = "V8 350HP Manual"
             });
             Console.WriteLine(Messages.Updated);
         }
