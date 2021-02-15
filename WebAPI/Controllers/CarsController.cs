@@ -29,11 +29,10 @@ namespace WebAPI.Controllers
             {
                 return Ok(result.Data);
             }
-
-            return BadRequest(result.Message);
+         return BadRequest(result.Message);
         }
-        
-         [HttpGet("getcardetaildtos")]
+
+        [HttpGet("getcardetaildtos")]
         public IActionResult GetCarDetailDtos()
         {
             var result = _carService.GetCarDetailDtos();
@@ -78,7 +77,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
+        [HttpGet("getbycarid")]
         public IActionResult GetByCarId(int id)
         {
             var result = _carService.GetByCarId(id);
